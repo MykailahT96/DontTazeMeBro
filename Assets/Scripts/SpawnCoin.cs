@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class SpawnCoin : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject coinPrefab;
+
+    public void SpawnCoins()
     {
-        
+        Instantiate(coinPrefab);
     }
 
-    // Update is called once per frame
-    void Update()
+    void Start()
     {
-        
+        SpawnCoins();
     }
 }
